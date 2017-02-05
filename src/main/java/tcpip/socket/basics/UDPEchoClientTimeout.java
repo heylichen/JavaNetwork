@@ -1,4 +1,4 @@
-package tcpip.upd.quickstart;
+package tcpip.socket.basics;
 
 import java.io.IOException;
 import java.io.InterruptedIOException;

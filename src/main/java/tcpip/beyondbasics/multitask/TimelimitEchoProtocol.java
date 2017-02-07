@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 class TimelimitEchoProtocol implements Runnable {
 
   private static final int BUFSIZE = 32; // Size (bytes) of buffer
-  private static final String TIMELIMIT = "10000"; // Default limit (ms)
+  private static final String TIMELIMIT = "3000"; // Default limit (ms)
   private static final String TIMELIMITPROP = "Timelimit"; // Property
 
   private static int timelimit;

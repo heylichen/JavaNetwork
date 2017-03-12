@@ -14,7 +14,7 @@ public class TCPEchoClientNonblocking {
 
     String server = args[0]; // Server name or IP address
     // Convert input String to bytes using the default charset
-    byte[] argument = args[1].getBytes();
+    byte[] argument = args[1].getBytes("UTF-8");
 
     int servPort = (args.length == 3) ? Integer.parseInt(args[2]) : 7;
 
@@ -26,6 +26,7 @@ public class TCPEchoClientNonblocking {
     if (!clntChan.connect(new InetSocketAddress(server, servPort))) {
       while (!clntChan.finishConnect()) {
         System.out.print("."); // Do something else
+        Thread.sleep(1000);
       }
     }
     ByteBuffer writeBuf = ByteBuffer.wrap(argument);

@@ -20,6 +20,11 @@
             <artifactId>guava</artifactId>
             <version>21.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.28</version>
+        </dependency>
         <!--slf4j logging-->
         <dependency>
             <groupId>org.slf4j</groupId>

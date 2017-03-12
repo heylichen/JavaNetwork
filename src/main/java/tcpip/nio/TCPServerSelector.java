@@ -1,5 +1,8 @@
 package tcpip.nio;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.channels.SelectionKey;
@@ -8,6 +11,7 @@ import java.nio.channels.ServerSocketChannel;
 import java.util.Iterator;
 
 public class TCPServerSelector {
+  private static Logger LOGGER = LoggerFactory.getLogger(TCPServerSelector.class);
 
   private static final int BUFSIZE = 256; // Buffer size (bytes)
   private static final int TIMEOUT = 3000; // Wait timeout (milliseconds)

@@ -1,7 +1,8 @@
 package tcpip.datatransfer.protocol;
 
 /**
- * vote msg protocol, separating request and response msg
+ * vote msg protocol, separating request and response msg, which is good for separating concern
+ * at model level, we need clear logic
  */
 public interface VoteCoder {
 
